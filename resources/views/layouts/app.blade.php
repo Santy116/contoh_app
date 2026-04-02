@@ -7,8 +7,10 @@
     @vite('resources/css/app.css')
 </head>
 <body>
-    <h1>Layout Admin Panel</h1>
+    <div class="min-h-screen">
+        <h1 class="p-4 text-xl font-bold">Admin Panel</h1>
 
-    @yield('content')
+        @yield('content')
+    </div>
 </body>
 </html>
