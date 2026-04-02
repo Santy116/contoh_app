@@ -1,9 +1,3 @@
-        <main class="flex-1 p-6">
-            @yield('content')
-        </main>
-    </div>
-</body>
-</html>
 <header class="bg-white shadow-md">
     <div class="px-6 py-4 flex items-center justify-between">
         <div>
