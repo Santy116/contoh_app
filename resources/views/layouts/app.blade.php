@@ -6,11 +6,19 @@
     <title>Admin Panel Mid Project</title>
     @vite('resources/css/app.css')
 </head>
-<body>
-    <div class="min-h-screen">
-        <h1 class="p-4 text-xl font-bold">Admin Panel</h1>
+<body class="bg-gray-100 min-h-screen">
+    <div class="min-h-screen flex flex-col">
+        @include('partials.header')
 
-        @yield('content')
+        <div class="flex flex-1">
+            @include('partials.sidebar')
+
+            <main class="flex-1 p-6">
+                @yield('content')
+            </main>
+        </div>
+
+        @include('partials.footer')
     </div>
 </body>
 </html>
